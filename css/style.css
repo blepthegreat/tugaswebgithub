@@ -1,0 +1,208 @@
+/* Navbar Styling */
+.navbar {
+    background-color: #111 !important; /* Dark background */
+    transition: background-color 0.3s ease;
+}
+
+.navbar-brand {
+    color: #FF0000; /* Red for logo text */
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.navbar-nav .nav-link {
+    color: #FFFFFF !important;
+    font-size: 1.1rem;
+    margin-left: 20px;
+    font-weight: 500;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #FF0000 !important; /* Red hover effect */
+    text-decoration: none;
+}
+
+
+
+/* Hero Section */
+.hero {
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.8)), url('images/rog-phone-9.jpg') no-repeat center center/cover;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero h1 {
+    font-size: 3.5rem;
+}
+
+.hero p {
+    font-size: 1.5rem;
+}
+
+footer {
+    background-color: #222;
+}
+
+footer a {
+    margin: 0 15px;
+    color: white;
+    font-size: 1.2rem;
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: #1e90ff;
+}
+
+#fitur {
+    background-color: #111;
+}
+
+.card-feature {
+    background-color: #222;
+    border-radius: 10px;
+    overflow: hidden;
+    padding: 20px;
+    position: relative;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card-feature:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.card-content {
+    position: relative; /* Pastikan teks berada di atas gambar */
+    z-index: 2; /* Teks berada di atas gambar */
+    transition: opacity 0.3s ease; /* Efek transisi untuk menghilangkan teks */
+}
+
+.card-title, .card-text {
+    transition: opacity 0.3s ease; /* Efek transisi untuk menghilangkan teks */
+}
+
+.card-img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.card-title {
+    font-size: 1.25rem;
+    font-weight: bold;
+    margin-top: 15px;
+}
+
+.card-text {
+    font-size: 1rem;
+    color: #ccc;
+    margin-top: 5px;
+}
+
+/* Gambar yang muncul saat hover */
+.card-img-hover {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0;
+    z-index: 1; /* Gambar berada di bawah teks */
+    transition: opacity 0.3s ease; /* Transisi gambar muncul */
+}
+
+.card-feature:hover .card-img-hover {
+    opacity: 1; /* Gambar akan muncul saat hover */
+}
+
+/* Teks menghilang saat hover */
+.card-feature:hover .card-content {
+    opacity: 0; /* Teks menghilang saat hover */
+}
+
+@media (max-width: 768px) {
+    .row {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+
+
+
+
+.table th,
+.table td {
+    text-align: center;
+    vertical-align: middle;
+}
+
+.table-dark {
+    background-color: #343a40;
+    color: #fff;
+}
+
+form input,
+form select,
+form textarea {
+    border-radius: 10px;
+}
+
+form button {
+    background-color: #28a745;
+    border-radius: 30px;
+    padding: 12px 30px;
+}
+
+
+/* Additional Styling for Video Background */
+.hero {
+    position: relative;
+    height: 100vh;
+}
+
+#hero-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures the video covers the entire hero section */
+    z-index: -1; /* Keeps the video behind the text */
+}
+
+/* Menambahkan font lokal menggunakan @font-face */
+@font-face {
+    font-family: 'ROG LyonsType';
+    src: url('../fonts/ROGLyonsType-Regular.woff2') format('woff2'),
+         url('../fonts/ROGLyonsType-Regular.woff') format('woff'),
+         url('../fonts/ROGLyonsTypeRegular3.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+/* Menggunakan font lokal di seluruh body */
+body {
+    font-family: 'ROG LyonsType', sans-serif;
+}
+
+/* Menggunakan font untuk navbar */
+.navbar {
+    font-family: 'ROG LyonsType', sans-serif;
+}
+
+/* Menggunakan font untuk Hero Section */
+.hero h1 {
+    font-family: 'ROG LyonsType', sans-serif;
+    font-weight: bold;
+}
+
+.hero p {
+    font-family: 'ROG LyonsType', sans-serif;
+}
+
